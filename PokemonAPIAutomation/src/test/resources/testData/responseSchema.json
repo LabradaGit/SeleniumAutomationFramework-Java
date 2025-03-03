@@ -1,0 +1,81 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1706844232.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "count",
+    "next",
+    "previous",
+    "results"
+  ],
+  "properties": {
+    "count": {
+      "$id": "#root/count",
+      "title": "Count",
+      "type": "integer",
+      "examples": [
+        1302
+      ],
+      "default": 0
+    },
+    "next": {
+      "$id": "#root/next",
+      "title": "Next",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "https://pokeapi.co/api/v2/pokemon?offset=300&limit=100"
+      ],
+      "pattern": "^.*$"
+    },
+    "previous": {
+      "$id": "#root/previous",
+      "title": "Previous",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "https://pokeapi.co/api/v2/pokemon?offset=100&limit=100"
+      ],
+      "pattern": "^.*$"
+    },
+    "results": {
+      "$id": "#root/results",
+      "title": "Results",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/results/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "name",
+          "url"
+        ],
+        "properties": {
+          "name": {
+            "$id": "#root/results/items/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "unown"
+            ],
+            "pattern": "^.*$"
+          },
+          "url": {
+            "$id": "#root/results/items/url",
+            "title": "Url",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "https://pokeapi.co/api/v2/pokemon/201/"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+    }
+  }
+}

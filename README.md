@@ -25,3 +25,14 @@ It was built to validate UI functionality, backend data integrity, and API endpo
 
 ## 🔹 How to Run
 1. Clone this repository:  
+
+2. Import into IntelliJ or Eclipse as a Maven project  
+3. Run tests with:  
+
+4. Review HTML report in `/test-output` directory
+
+---
+
+📫 **Author:** Luis Labrada  
+**LinkedIn:** [linkedin.com/in/luis-labrada](https://www.linkedin.com/in/luis-labrada)  
+**Email:** labradaluism@gmail.com
